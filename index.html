@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("image/cdbg.jpg");
+        }
+        #mahasiswa {
+          font-family:  'Poppins', sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        #mahasiswa td, #mahasiswa th {
+          border: 1px solid #ddd;
+          padding: 8px;
+        }
+        
+        #mahasiswa tr:nth-child(even){background-color: #f2f2f2;}
+        
+        #mahasiswa tr:hover {background-color: #ddd;}
+        
+        #mahasiswa th {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          text-align: left;
+          background-color: #04AA6D;
+          color: white;
+        }
+        </style>
+</head>
+<body>
+    <table id="mahasiswa" border="1" cellspacing="0" cellpadding="8">
+        <thead>
+            <tr>
+                <th rowspan="2">NAMA</th>
+                <th colspan="2">MATERI</th>
+                <th colspan="2">IPK</th>
+            </tr>
+
+            <tr>
+                <th>WORKSHOP</th>
+                <th>KHUSUS</th>
+                <th>LOKAL</th>
+                <th>UTAMA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Adi</td>
+                <td>Introduction to XML</td>
+                <td>Web Programming With ASP</td>
+                <td>3,23</td>
+                <td>3,47</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Ani</td>
+                <td>Visual basic With Database</td>
+                <td rowspan="2">Visual basic With SQL Server</td>
+                <td rowspan="2">3,53</td>
+                <td rowspan="2">3,64</td>
+            </tr>
+            <tr>
+                <td>Oracle Developer Report</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Ali</td>
+                <td rowspan="2">Visual basic With Database</td>
+                <td>Introduction to Oracle:SQL and PL/SQL</td>
+                <td rowspan="2">3,66</td>
+                <td rowspan="2">3,39</td>
+            </tr>
+            <tr>
+                <td>Visual Basic With SQL Server</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
