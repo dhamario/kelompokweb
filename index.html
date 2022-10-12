@@ -40,6 +40,10 @@
             display: inline-block;
             font-size: 16px;
         }
+
+        .center {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -116,16 +120,16 @@
     <table id="mahasiswa" border="1" cellspacing="0" cellpadding="8">
         <thead>
             <tr>
-                <th rowspan="2">NAMA</th>
-                <th colspan="2">MATERI</th>
-                <th colspan="2">IPK</th>
+                <th style="text-align:center" rowspan="2">NAMA</th>
+                <th style="text-align:center" colspan="2">MATERI</th>
+                <th style="text-align:center" colspan="2">IPK</th>
             </tr>
 
             <tr>
-                <th>WORKSHOP</th>
-                <th>KHUSUS</th>
-                <th>LOKAL</th>
-                <th>UTAMA</th>
+                <th style="text-align:center">WORKSHOP</th>
+                <th style="text-align:center">KHUSUS</th>
+                <th style="text-align:center">LOKAL</th>
+                <th style="text-align:center">UTAMA</th>
             </tr>
         </thead>
         <tbody>
@@ -133,15 +137,15 @@
                 <td>Adi</td>
                 <td>Introduction to XML</td>
                 <td>Web Programming With ASP</td>
-                <td>3,23</td>
-                <td>3,47</td>
+                <td class="center">3,23</td>
+                <td class="center">3,47</td>
             </tr>
             <tr>
                 <td rowspan="2">Ani</td>
                 <td>Visual basic With Database</td>
                 <td rowspan="2">Visual basic With SQL Server</td>
-                <td rowspan="2">3,53</td>
-                <td rowspan="2">3,64</td>
+                <td rowspan="2" class="center">3,53</td>
+                <td rowspan="2" class="center">3,64</td>
             </tr>
             <tr>
                 <td>Oracle Developer Report</td>
@@ -150,8 +154,8 @@
                 <td rowspan="2">Ali</td>
                 <td rowspan="2">Visual basic With Database</td>
                 <td>Introduction to Oracle:SQL and PL/SQL</td>
-                <td rowspan="2">3,66</td>
-                <td rowspan="2">3,39</td>
+                <td rowspan="2" class="center">3,66</td>
+                <td rowspan="2" class="center">3,39</td>
             </tr>
             <tr>
                 <td>Visual Basic With SQL Server</td>
