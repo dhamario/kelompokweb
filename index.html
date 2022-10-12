@@ -1,35 +1,118 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Kelompok Web</title>
     <style>
-       
         #mahasiswa {
-          font-family:  'Poppins', sans-serif;
-          border-collapse: collapse;
-          width: 100%;
+            font-family: 'Poppins', sans-serif;
+            border-collapse: collapse;
+            width: 100%;
         }
-        
-        #mahasiswa td, #mahasiswa th {
-          border: 1px solid #ddd;
-          padding: 8px;
-        }
-        
+
+        #mahasiswa td,
         #mahasiswa th {
-          padding-top: 12px;
-          padding-bottom: 12px;
-          text-align: left;
-          background-color: #04AA6D;
-          color: white;
+            border: 1px solid #ddd;
+            padding: 8px;
         }
+
+        #mahasiswa th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+
         .responsive {
             width: 100%;
             height: auto;
         }
-        </style>
+
+        .button {
+            background-color: #04AA6D;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
 </head>
+
 <body>
     <img class="responsive" src="image/img.jpg" alt="">
+
+    <table id="mahasiswa" border="1" cellspacing="0" cellpadding="10" align="center">
+        <tr>
+            <td colspan="2">
+                <center>
+                    <h4>INPUT DATA MAHASISWA</h4>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <tabel for="Name">Nama</tabel>
+            </td>
+            <td><input type="text" id="Name"></td>
+        </tr>
+
+        <tr>
+            <td><label for="Workshop">Workshop</label></td>
+            <td><select id="Workshop">
+                    <option value="SP">Silahkan Pilih</option>
+                    <option>Introduction to XML</option>
+                    <option>Visual basic With Database</option>
+                    <option>Oracle Developer Report</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="Kursus">Kursus</label></td>
+            <td><select id="Kursus">
+                    <option value="SP">Silahkan Pilih</option>
+                    <option>Web Programming With ASP</option>
+                    <option>Visual basic With SQL Server</option>
+                    <option>Introduction to Oracle:SQL and PL/SQL</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <center>
+                    <h4>MASUKKAN IPK MAHASISWA</h4>
+                </center>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <tabel for="Lokal">Lokal</tabel>
+            </td>
+            <td><input type="text" id="Lokal"></td>
+        </tr>
+
+        <tr>
+            <td>
+                <tabel for="Utama">Utama</tabel>
+            </td>
+            <td><input type="text" id="Utama"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <center><input class="button" type="submit" value="Submit"></center>
+            </td>
+        </tr>
+
+    </table>
+
     <table id="mahasiswa" border="1" cellspacing="0" cellpadding="8">
         <thead>
             <tr>
@@ -76,4 +159,5 @@
         </tbody>
     </table>
 </body>
+
 </html>
