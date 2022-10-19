@@ -3,54 +3,13 @@
 
 <head>
     <title>Kelompok Web</title>
-    <style>
-        #mahasiswa {
-            font-family: 'Poppins', sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        #mahasiswa td,
-        #mahasiswa th {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-
-        #mahasiswa th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: left;
-            background-color: #04AA6D;
-            color: white;
-        }
-
-        .responsive {
-            width: 100%;
-            height: auto;
-        }
-
-        .button {
-            background-color: #04AA6D;
-            /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-        }
-
-        .center {
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <img class="responsive" src="image/img.jpg" alt="">
 
-    <table style="margin-bottom:20px;" id="mahasiswa" border="1" cellspacing="0" cellpadding="10" align="center">
+    <table id="mahasiswa" border="1" cellspacing="0" cellpadding="10">
         <tr>
             <td colspan="2">
                 <center>
@@ -117,19 +76,19 @@
 
     </table>
 
-    <table id="mahasiswa" border="1" cellspacing="0" cellpadding="8">
+    <table id="mahasiswa" border="3" cellspacing="2" cellpadding="10">
         <thead>
             <tr>
-                <th style="text-align:center" rowspan="2">NAMA</th>
-                <th style="text-align:center" colspan="2">MATERI</th>
-                <th style="text-align:center" colspan="2">IPK</th>
+                <th rowspan="2">NAMA</th>
+                <th colspan="2">MATERI</th>
+                <th colspan="2">IPK</th>
             </tr>
 
             <tr>
-                <th style="text-align:center">WORKSHOP</th>
-                <th style="text-align:center">KHUSUS</th>
-                <th style="text-align:center">LOKAL</th>
-                <th style="text-align:center">UTAMA</th>
+                <th>WORKSHOP</th>
+                <th>KHUSUS</th>
+                <th>LOKAL</th>
+                <th>UTAMA</th>
             </tr>
         </thead>
         <tbody>
