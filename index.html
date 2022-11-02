@@ -1,31 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Kelompok Web</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS M4</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
-    <img class="responsive" src="image/img.jpg" alt="">
+    <div class="logo" style="text-align: center;">
+        <img src="image/gunadarma.png" width="300" height="300">
+    </div>
 
-    <table id="mahasiswa" border="1" cellspacing="0" cellpadding="10">
+    <table border="2" cellpadding="8" align="center">
+        <center>
+            <h2>INPUT DATA MAHASISWA</h2>
+        </center>
         <tr>
-            <td colspan="2">
+            <td>
                 <center>
-                    <h4>INPUT DATA MAHASISWA</h4>
+                    <h4>DATA DIRI</h4>
+                </center>
+            </td>
+            <td>
+                <center>
+                    <h4>MATERI</h4>
+                </center>
+            </td>
+            <td>
+                <center>
+                    <h4>NILAI MAHASISWA</h4>
                 </center>
             </td>
         </tr>
         <tr>
             <td>
-                <tabel for="Name">Nama</tabel>
+                <center><label for="fname">NAMA</label></center>
             </td>
-            <td><input type="text" id="Name"></td>
+            <td>
+                <center>WORKSHOP</center>
+            </td>
+            <td>
+                <center>LOKAL</center>
+            </td>
         </tr>
-
         <tr>
-            <td><label for="Workshop">Workshop</label></td>
+            <td><input type="text" id="fname" name="fname" value=""></td>
             <td><select id="Workshop">
                     <option value="SP">Silahkan Pilih</option>
                     <option>Introduction to XML</option>
@@ -33,10 +56,20 @@
                     <option>Oracle Developer Report</option>
                 </select>
             </td>
-        </tr>
-
+            <td><input type="text" id="fname" name="fname" value=""></td </tr>
         <tr>
-            <td><label for="Kursus">Kursus</label></td>
+            <td>
+                <center>KELAS</center>
+            </td>
+            <td>
+                <center>KURSUS</center>
+            </td>
+            <td>
+                <center>UTAMA</center>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="text" id="fclass" name="fclass" value=""></td>
             <td><select id="Kursus">
                     <option value="SP">Silahkan Pilih</option>
                     <option>Web Programming With ASP</option>
@@ -44,49 +77,30 @@
                     <option>Introduction to Oracle:SQL and PL/SQL</option>
                 </select>
             </td>
-        </tr>
-
+            <td><input type="text" id="fname" name="fname" value=""></td </tr>
         <tr>
-            <td colspan="2">
-                <center>
-                    <h4>MASUKKAN IPK MAHASISWA</h4>
-                </center>
+            <td colspan="3">
+                <center><input type="Submit" value="Submit"></center>
             </td>
         </tr>
-
-        <tr>
-            <td>
-                <tabel for="Lokal">Lokal</tabel>
-            </td>
-            <td><input type="text" id="Lokal"></td>
-        </tr>
-
-        <tr>
-            <td>
-                <tabel for="Utama">Utama</tabel>
-            </td>
-            <td><input type="text" id="Utama"></td>
-        </tr>
-
-        <tr>
-            <td colspan="2">
-                <center><input class="button" type="submit" value="Submit"></center>
-            </td>
-        </tr>
-
     </table>
-
-    <table id="mahasiswa" border="3" cellspacing="2" cellpadding="10">
+    <br>
+    <br>
+    <table border="2" cellpadding="8" align="center">
+        <center>
+            <h2>DATA MAHASISWA</h2>
+        </center>
         <thead>
             <tr>
                 <th rowspan="2">NAMA</th>
+                <th rowspan="2">KELAS</th>
                 <th colspan="2">MATERI</th>
                 <th colspan="2">IPK</th>
             </tr>
 
             <tr>
                 <th>WORKSHOP</th>
-                <th>KHUSUS</th>
+                <th>KURSUS</th>
                 <th>LOKAL</th>
                 <th>UTAMA</th>
             </tr>
@@ -94,33 +108,39 @@
         <tbody>
             <tr>
                 <td>Adi</td>
+                <td>3IA14</td>
                 <td>Introduction to XML</td>
                 <td>Web Programming With ASP</td>
-                <td class="center">3,23</td>
-                <td class="center">3,47</td>
+                <td>3,23</td>
+                <td>3,47</td>
             </tr>
             <tr>
                 <td rowspan="2">Ani</td>
+                <td rowspan="2">3IA03</td>
                 <td>Visual basic With Database</td>
                 <td rowspan="2">Visual basic With SQL Server</td>
-                <td rowspan="2" class="center">3,53</td>
-                <td rowspan="2" class="center">3,64</td>
+                <td rowspan="2">3,53</td>
+                <td rowspan="2">3,64</td>
             </tr>
             <tr>
                 <td>Oracle Developer Report</td>
             </tr>
             <tr>
                 <td rowspan="2">Ali</td>
+                <td rowspan="2">3IA05</td>
                 <td rowspan="2">Visual basic With Database</td>
                 <td>Introduction to Oracle:SQL and PL/SQL</td>
-                <td rowspan="2" class="center">3,66</td>
-                <td rowspan="2" class="center">3,39</td>
+                <td rowspan="2">3,66</td>
+                <td rowspan="2">3,39</td>
             </tr>
             <tr>
                 <td>Visual Basic With SQL Server</td>
             </tr>
         </tbody>
     </table>
+    <div class="video" style="text-align:center; margin-top: 20px;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jGyYuQf-GeE"></iframe>
+    </div>
 </body>
 
 </html>
